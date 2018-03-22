@@ -55,3 +55,14 @@ Installing collected packages: termcolor, protobuf, astor, grpcio, absl-py, html
       Successfully uninstalled bleach-2.1.3
 Successfully installed absl-py-0.1.12 astor-0.6.2 bleach-1.5.0 gast-0.2.0 grpcio-1.10.0 html5lib-0.9999999 markdown-2.6.11 protobuf-3.5.2.post1 tensorboard-1.6.0 tensorflow-gpu-1.6.0 termcolor-1.1.0 werkzeug-0.14.1
 ~~~
+root@DataLX01:~/installer# apt list cuda*
+~~~
+Listing... 완료
+cuda/unknown,now 9.1.85-1 amd64 [installed]
+cuda-8-0/unknown 8.0.61-1 amd64
+cuda-9-0/unknown,now 9.0.176-1 amd64 [installed,auto-removable]
+cuda-9-1/unknown,now 9.1.85-1 amd64 [installed,automatic]
+cuda-command-line-tools-8-0/unknown 8.0.61-1 amd64
+cuda-command-line-tools-9-0/unknown,now 9.0.176-1 amd64 [installed,auto-removable]
+cuda-command-line-tools-9-1/unknown,now 9.1.85-1 amd64 [installed,automatic]
+~~~
