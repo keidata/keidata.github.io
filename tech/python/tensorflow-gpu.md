@@ -31,11 +31,11 @@ Collecting html5lib==0.9999999 (from tensorboard<1.7.0,>=1.6.0->tensorflow-gpu)
 Collecting bleach==1.5.0 (from tensorboard<1.7.0,>=1.6.0->tensorflow-gpu)
   Downloading bleach-1.5.0-py2.py3-none-any.whl
 Collecting markdown>=2.6.8 (from tensorboard<1.7.0,>=1.6.0->tensorflow-gpu)
-Downloading Markdown-2.6.11-py2.py3-none-any.whl (78kB)
-100% |████████████████████████████████| 81kB 6.8MB/s
+  Downloading Markdown-2.6.11-py2.py3-none-any.whl (78kB)
+    100% |████████████████████████████████| 81kB 6.8MB/s
 Collecting werkzeug>=0.11.10 (from tensorboard<1.7.0,>=1.6.0->tensorflow-gpu)
-Downloading Werkzeug-0.14.1-py2.py3-none-any.whl (322kB)
-100% |████████████████████████████████| 327kB 4.1MB/s
+  Downloading Werkzeug-0.14.1-py2.py3-none-any.whl (322kB)
+    100% |████████████████████████████████| 327kB 4.1MB/s
 Building wheels for collected packages: termcolor, absl-py, gast, html5lib
   Running setup.py bdist_wheel for termcolor ... done
   Stored in directory: /root/.cache/pip/wheels/de/f7/bf/1bcac7bf30549e6a4957382e2ecab04c88e513117207067b03
