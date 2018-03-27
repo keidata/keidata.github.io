@@ -242,3 +242,4 @@ C:\Users\user>jps
 7164 NameNode
 9036 Jps
 ~~~
+http://localhost:50070/dfshealth.html#tab-overview  
