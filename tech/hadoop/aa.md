@@ -1,4 +1,5 @@
 C:\Users\user>hdfs  namenode -format
+~~~
 18/03/27 16:28:05 INFO namenode.NameNode: STARTUP_MSG:
 /************************************************************
 STARTUP_MSG: Starting NameNode
@@ -201,43 +202,43 @@ IMPLE)
 18/03/27 16:28:07 INFO namenode.FSDirectory: ACLs enabled? false
 18/03/27 16:28:07 INFO namenode.FSDirectory: XAttrs enabled? true
 18/03/27 16:28:07 INFO namenode.FSDirectory: Maximum size of an xattr: 16384
-18/03/27 16:28:07 INFO namenode.NameNode: Caching file names occuring more than
-10 times
+18/03/27 16:28:07 INFO namenode.NameNode: Caching file names occuring more than10 times
 18/03/27 16:28:07 INFO util.GSet: Computing capacity for map cachedBlocks
 18/03/27 16:28:07 INFO util.GSet: VM type       = 64-bit
 18/03/27 16:28:07 INFO util.GSet: 0.25% max memory 889 MB = 2.2 MB
 18/03/27 16:28:07 INFO util.GSet: capacity      = 2^18 = 262144 entries
-18/03/27 16:28:07 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pc
-t = 0.9990000128746033
-18/03/27 16:28:07 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanode
-s = 0
-18/03/27 16:28:07 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension
-  = 30000
-18/03/27 16:28:07 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.n
-um.buckets = 10
-18/03/27 16:28:07 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.user
-s = 10
-18/03/27 16:28:07 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.
-minutes = 1,5,25
+18/03/27 16:28:07 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+18/03/27 16:28:07 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+18/03/27 16:28:07 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension  = 30000
+18/03/27 16:28:07 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+18/03/27 16:28:07 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+18/03/27 16:28:07 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
 18/03/27 16:28:07 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
-
-18/03/27 16:28:07 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total
- heap and retry cache entry expiry time is 600000 millis
+18/03/27 16:28:07 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
 18/03/27 16:28:07 INFO util.GSet: Computing capacity for map NameNodeRetryCache
 18/03/27 16:28:07 INFO util.GSet: VM type       = 64-bit
-18/03/27 16:28:07 INFO util.GSet: 0.029999999329447746% max memory 889 MB = 273.
-1 KB
+18/03/27 16:28:07 INFO util.GSet: 0.029999999329447746% max memory 889 MB = 273.1 KB
 18/03/27 16:28:07 INFO util.GSet: capacity      = 2^15 = 32768 entries
-18/03/27 16:28:08 INFO namenode.FSImage: Allocated new BlockPoolId: BP-202298753
-7-192.168.3.105-1522135688905
-18/03/27 16:28:09 INFO common.Storage: Storage directory C:\hadoop-2.7.1\data\na
-menode has been successfully formatted.
-18/03/27 16:28:09 INFO namenode.NNStorageRetentionManager: Going to retain 1 ima
-ges with txid >= 0
+18/03/27 16:28:08 INFO namenode.FSImage: Allocated new BlockPoolId: BP-2022987537-192.168.3.105-1522135688905
+18/03/27 16:28:09 INFO common.Storage: Storage directory C:\hadoop-2.7.1\data\namenode has been successfully formatted.
+18/03/27 16:28:09 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
 18/03/27 16:28:09 INFO util.ExitUtil: Exiting with status 0
 18/03/27 16:28:09 INFO namenode.NameNode: SHUTDOWN_MSG:
 /************************************************************
 SHUTDOWN_MSG: Shutting down NameNode at KDATA/192.168.3.105
 ************************************************************/
-
-C:\Users\user>
+~~~
+C:\Users\user>start-all.cmd
+~~~
+This script is Deprecated. Instead use start-dfs.cmd and start-yarn.cmd
+starting yarn daemons
+~~~
+C:\Users\user>jps
+~~~
+7760 SecondaryNameNode
+2260 NodeManager
+4916 ResourceManager
+6728 DataNode
+7164 NameNode
+9036 Jps
+~~~
