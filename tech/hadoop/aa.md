@@ -243,3 +243,4 @@ C:\Users\user>jps
 9036 Jps
 ~~~
 http://localhost:50070/dfshealth.html#tab-overview  
+http://localhost:8088/cluster  
