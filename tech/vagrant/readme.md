@@ -11,24 +11,20 @@ Common commands:
      global-status   outputs status Vagrant environments for this user
      halt            stops the vagrant machine
      help            shows the help for a subcommand
-     init            initializes a new Vagrant environment by creating a Vagrant
-file
+     init            initializes a new Vagrant environment by creating a Vagrant file
      login           log in to HashiCorp's Vagrant Cloud
      package         packages a running vagrant environment into a box
      plugin          manages plugins: install, uninstall, update, etc.
      port            displays information about guest port mappings
      powershell      connects to machine via powershell remoting
      provision       provisions the vagrant machine
-     push            deploys code in this environment to a configured destinatio
-n
+     push            deploys code in this environment to a configured destination
      rdp             connects to machine via RDP
-     reload          restarts vagrant machine, loads new Vagrantfile configurati
-on
+     reload          restarts vagrant machine, loads new Vagrantfile configuration
      resume          resume a suspended vagrant machine
      snapshot        manages snapshots: saving, restoring, etc.
      ssh             connects to machine via SSH
-     ssh-config      outputs OpenSSH valid configuration to connect to the machi
-ne
+     ssh-config      outputs OpenSSH valid configuration to connect to the machine
      status          outputs status of the vagrant machine
      suspend         suspends the machine
      up              starts and provisions the vagrant environment
@@ -87,13 +83,17 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: Checking for guest additions in VM...
     default: No guest additions were detected on the base box for this VM! Guest
 
-    default: additions are required for forwarded ports, shared folders, host on
-ly
+    default: additions are required for forwarded ports, shared folders, host only
     default: networking, and more. If SSH fails on this machine, please install
     default: the guest additions and repackage the box to continue.
     default:
-    default: This is not an error message; everything may continue to work prope
-rly,
+    default: This is not an error message; everything may continue to work properly,
     default: in which case you may ignore this message.
 ==> default: Rsyncing folder: /cygdrive/c/Users/user/vagrant/hadoop/ => /vagrant
+~~~
+C:\Users\user\vagrant\hadoop>vagrant destroy
+~~~
+    default: Are you sure you want to destroy the 'default' VM? [y/N] y
+==> default: Forcing shutdown of VM...
+==> default: Destroying VM and associated drives...
 ~~~
