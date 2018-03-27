@@ -49,3 +49,8 @@ C:\Users\user>cd vagrant
 ~~~
 C:\Users\user\vagrant>
 ~~~
+C:\Users\user\vagrant>mkdir hadoop  
+  
+C:\Users\user\vagrant>cd hadoop  
+  
+C:\Users\user\vagrant\hadoop>  
