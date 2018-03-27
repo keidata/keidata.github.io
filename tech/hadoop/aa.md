@@ -244,3 +244,47 @@ C:\Users\user>jps
 ~~~
 http://localhost:50070/dfshealth.html#tab-overview  
 http://localhost:8088/cluster  
+C:\Users\user>hdfs dfs -ls /
+
+C:\Users\user>hdfs dfs -user KODB
+-user: Unknown command
+
+C:\Users\user>hdfs dfs --help
+--help: Unknown command
+
+C:\Users\user>hdfs dfs -h
+-h: Unknown command
+
+C:\Users\user>hdfs dfs -mkdir /user
+
+C:\Users\user>hdfs dfs -mkdir /user/user
+
+C:\Users\user>hdfs dfs -mkdir input
+mkdir: `input': No such file or directory
+
+C:\Users\user>hdfs dfs -mkdir /user/kodb
+
+C:\Users\user>hdfs dfs -mkdir input
+mkdir: `input': No such file or directory
+
+C:\Users\user>hdfs dfs -rm -R /user/*
+18/03/27 17:05:40 INFO fs.TrashPolicyDefault: Namenode trash configuration: Dele
+tion interval = 0 minutes, Emptier interval = 0 minutes.
+Deleted /user/kodb
+18/03/27 17:05:40 INFO fs.TrashPolicyDefault: Namenode trash configuration: Dele
+tion interval = 0 minutes, Emptier interval = 0 minutes.
+Deleted /user/user
+
+C:\Users\user>hdfs dfs -rm -R /user/kodb
+rm: `/user/kodb': No such file or directory
+
+C:\Users\user>hdfs dfs -rm -R /user/user
+rm: `/user/user': No such file or directory
+
+C:\Users\user>hdfs dfs -mkdir /user/KODB
+
+C:\Users\user>hdfs dfs -mkdir input
+
+C:\Users\user>hdfs dfs -copyFromLocal c:\hadoop-2.7.1\etc\hadoop\* input
+
+C:\Users\user>
