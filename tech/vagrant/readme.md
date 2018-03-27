@@ -53,4 +53,11 @@ C:\Users\user\vagrant>mkdir hadoop
   
 C:\Users\user\vagrant>cd hadoop  
   
-C:\Users\user\vagrant\hadoop>  
+C:\Users\user\vagrant\hadoop>vagrant init --minimal centos7  
+~~~
+A `Vagrantfile` has been placed in this directory. You are now
+ready to `vagrant up` your first virtual environment! Please read
+the comments in the Vagrantfile as well as documentation on
+`vagrantup.com` for more information on using Vagrant.
+~~~
+C:\Users\user\vagrant\hadoop>
