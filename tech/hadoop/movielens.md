@@ -37,4 +37,14 @@ $ head u.item
 10|Richard III (1995)|22-Jan-1996||http://us.imdb.com/M/title-exact?Richard%20III%20(1995)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0
 ~~~
 KODB@KDATA /cygdrive/c/Users/user/downloads/Hive/ml-100k
+$ split.exe -l 841 u.item
+  
+KODB@KDATA /cygdrive/c/Users/user/downloads/Hive/ml-100k
+$ ls
+~~~
+allbut.pl  u.data   u.item        u1.base  u2.test  u4.base  u5.test  ub.base  xab
+mku.sh     u.genre  u.occupation  u1.test  u3.base  u4.test  ua.base  ub.test
+README     u.info   u.user        u2.base  u3.test  u5.base  ua.test  xaa
+~~~
+KODB@KDATA /cygdrive/c/Users/user/downloads/Hive/ml-100k
 $
