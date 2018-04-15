@@ -1,0 +1,13 @@
+## Tensorflow 설치  
+~~~
+root@DataLX01:/home/b3nn9/Download/cuDNN# dpkg -i libcudnn7_7.1.2.21-1+cuda9.1_amd64.deb 
+Selecting previously unselected package libcudnn7.
+(데이터베이스 읽는중 ...현재 356084개의 파일과 디렉터리가 설치되어 있습니다.)
+Preparing to unpack libcudnn7_7.1.2.21-1+cuda9.1_amd64.deb ...
+Unpacking libcudnn7 (7.1.2.21-1+cuda9.1) ...
+libcudnn7 (7.1.2.21-1+cuda9.1) 설정하는 중입니다 ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+/sbin/ldconfig.real: file /usr/local/cuda-9.1/targets/x86_64-linux/lib/libcudnn.so.7 is truncated
+
+root@DataLX01:/home/b3nn9/Download/cuDNN# 
+~~~
