@@ -1,3 +1,102 @@
+https://www.tensorflow.org/install/install_linux
+
+root@DataLX01:~# pip install tensorflow-gpu
+~~~
+Looking in indexes: http://ftp.daumkakao.com/pypi/simple
+Requirement already satisfied: tensorflow-gpu in /usr/local/lib/python3.6/dist-packages (1.6.0)
+Requirement already satisfied: grpcio>=1.8.6 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu) (1.10.0)
+Requirement already satisfied: tensorboard<1.7.0,>=1.6.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu) (1.6.0)
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu) (1.14.2)
+Requirement already satisfied: astor>=0.6.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu) (0.6.2)
+Requirement already satisfied: termcolor>=1.1.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu) (1.1.0)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorflow-gpu) (0.29.0)
+Requirement already satisfied: six>=1.10.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu) (1.11.0)
+Requirement already satisfied: protobuf>=3.4.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu) (3.5.2.post1)
+Requirement already satisfied: gast>=0.2.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu) (0.2.0)
+Requirement already satisfied: absl-py>=0.1.6 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu) (0.1.12)
+Requirement already satisfied: html5lib==0.9999999 in /usr/local/lib/python3.6/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow-gpu) (0.9999999)
+Requirement already satisfied: bleach==1.5.0 in /usr/local/lib/python3.6/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow-gpu) (1.5.0)
+Requirement already satisfied: werkzeug>=0.11.10 in /usr/local/lib/python3.6/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow-gpu) (0.14.1)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.6/dist-packages (from tensorboard<1.7.0,>=1.6.0->tensorflow-gpu) (2.6.11)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.6/dist-packages (from protobuf>=3.4.0->tensorflow-gpu) (39.0.1)
+socketio 0.0.7 has requirement setuptools==3.3, but you'll have setuptools 39.0.1 which is incompatible.
+root@DataLX01:~# 
+~~~
+
+root@DataLX01:~# apt-get install cuda-command-line-tools
+~~~
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다       
+상태 정보를 읽는 중입니다... 완료
+E: cuda-command-line-tools 패키지를 찾을 수 없습니다
+~~~
+root@DataLX01:~# apt-get install libcupti-dev
+~~~
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다       
+상태 정보를 읽는 중입니다... 완료
+다음 패키지가 자동으로 설치되었지만 더 이상 필요하지 않습니다:
+  cuda-9-0 cuda-command-line-tools-9-0 cuda-core-9-0 cuda-cublas-9-0 cuda-cublas-dev-9-0 cuda-cudart-9-0
+  cuda-cudart-dev-9-0 cuda-cufft-9-0 cuda-cufft-dev-9-0 cuda-curand-9-0 cuda-curand-dev-9-0 cuda-cusolver-9-0
+  cuda-cusolver-dev-9-0 cuda-cusparse-9-0 cuda-cusparse-dev-9-0 cuda-demo-suite-9-0 cuda-documentation-9-0
+  cuda-driver-dev-9-0 cuda-libraries-9-0 cuda-libraries-dev-9-0 cuda-license-9-0 cuda-misc-headers-9-0 cuda-npp-9-0
+  cuda-npp-dev-9-0 cuda-nvgraph-9-0 cuda-nvgraph-dev-9-0 cuda-nvml-dev-9-0 cuda-nvrtc-9-0 cuda-nvrtc-dev-9-0
+  cuda-runtime-9-0 cuda-samples-9-0 cuda-toolkit-9-0 cuda-visual-tools-9-0 libllvm4.0
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  libcupti-doc libcupti7.5
+다음 새 패키지를 설치할 것입니다:
+  libcupti-dev libcupti-doc libcupti7.5
+0개 업그레이드, 3개 새로 설치, 0개 제거 및 48개 업그레이드 안 함.
+1,113 k바이트 아카이브를 받아야 합니다.
+이 작업 후 4,915 k바이트의 디스크 공간을 더 사용하게 됩니다.
+계속 하시겠습니까? [Y/n] Y
+받기:1 http://mirror.kakao.com/ubuntu xenial/multiverse amd64 libcupti7.5 amd64 7.5.18-0ubuntu1 [993 kB]
+받기:2 http://mirror.kakao.com/ubuntu xenial/multiverse amd64 libcupti-dev amd64 7.5.18-0ubuntu1 [65.3 kB]
+받기:3 http://mirror.kakao.com/ubuntu xenial/multiverse amd64 libcupti-doc all 7.5.18-0ubuntu1 [55.2 kB]
+내려받기 1,113 k바이트, 소요시간 0초 (2,913 k바이트/초)
+Selecting previously unselected package libcupti7.5:amd64.
+(데이터베이스 읽는중 ...현재 356091개의 파일과 디렉터리가 설치되어 있습니다.)
+Preparing to unpack .../libcupti7.5_7.5.18-0ubuntu1_amd64.deb ...
+Unpacking libcupti7.5:amd64 (7.5.18-0ubuntu1) ...
+Selecting previously unselected package libcupti-dev:amd64.
+Preparing to unpack .../libcupti-dev_7.5.18-0ubuntu1_amd64.deb ...
+Unpacking libcupti-dev:amd64 (7.5.18-0ubuntu1) ...
+Selecting previously unselected package libcupti-doc.
+Preparing to unpack .../libcupti-doc_7.5.18-0ubuntu1_all.deb ...
+Unpacking libcupti-doc (7.5.18-0ubuntu1) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+/sbin/ldconfig.real: file /usr/local/cuda-9.1/targets/x86_64-linux/lib/libcudnn.so.7 is truncated
+
+libcupti7.5:amd64 (7.5.18-0ubuntu1) 설정하는 중입니다 ...
+libcupti-dev:amd64 (7.5.18-0ubuntu1) 설정하는 중입니다 ...
+libcupti-doc (7.5.18-0ubuntu1) 설정하는 중입니다 ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+/sbin/ldconfig.real: file /usr/local/cuda-9.1/targets/x86_64-linux/lib/libcudnn.so.7 is truncated
+
+root@DataLX01:~# 
+~~~
+
+root@DataLX01:~# easy_install -U pip
+~~~
+Searching for pip
+Reading https://pypi.python.org/simple/pip/
+Downloading https://files.pythonhosted.org/packages/0f/74/ecd13431bcc456ed390b44c8a6e917c1820365cbebcb6a8974d1cd045ab4/pip-10.0.1-py2.py3-none-any.whl#sha256=717cdffb2833be8409433a93746744b59505f42146e8d37de6c62b430e25d6d7
+Best match: pip 10.0.1
+Processing pip-10.0.1-py2.py3-none-any.whl
+Installing pip-10.0.1-py2.py3-none-any.whl to /usr/local/lib/python3.6/dist-packages
+writing requirements to /usr/local/lib/python3.6/dist-packages/pip-10.0.1-py3.6.egg/EGG-INFO/requires.txt
+Adding pip 10.0.1 to easy-install.pth file
+Installing pip script to /usr/local/bin
+Installing pip3 script to /usr/local/bin
+Installing pip3.6 script to /usr/local/bin
+
+Installed /usr/local/lib/python3.6/dist-packages/pip-10.0.1-py3.6.egg
+Processing dependencies for pip
+Finished processing dependencies for pip
+root@DataLX01:~# 
+~~~
+
 root@DataLX01:~/installer# pip install tensorflow-gpu
 ~~~
 Collecting tensorflow-gpu
