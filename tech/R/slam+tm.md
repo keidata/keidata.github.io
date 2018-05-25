@@ -9,3 +9,11 @@ Status: install ok installed
 .......
 ~~~
 2) 
+
+
+~~~
+root@DataLX01:~# ldconfig -p | grep libgfortran
+        libgfortran.so.3 (libc6,x32) => /usr/libx32/libgfortran.so.3
+        libgfortran.so.3 (libc6,x86-64) => /usr/lib/x86_64-linux-gnu/libgfortran.so.3
+        libgfortran.so.3 (libc6) => /usr/lib32/libgfortran.so.3
+~~~
